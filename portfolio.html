@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandana Gattupelli - AI Enthusiast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #1e1e1e;
+            animation: fadeIn 2s ease-in;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #ff6347;
+            font-weight: 600;
+            animation: slideDown 1.5s ease-out;
+        }
+
+        header p {
+            margin: 15px 0 0;
+            font-size: 1.2em;
+            font-weight: 300;
+            animation: slideUp 1.5s ease-out;
+        }
+
+        nav {
+            margin-top: 30px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            font-size: 1em;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            border-color: #ff6347;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1.5s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #ff6347;
+            font-weight: 600;
+        }
+
+        p {
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .project {
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            animation: fadeInUp 1.5s ease forwards;
+            animation-delay: 0.7s;
+        }
+
+        .project h3 {
+            color: #ff6347;
+            font-size: 1.5em;
+            margin-top: 0;
+            font-weight: 600;
+        }
+
+        .project p {
+            margin: 10px 0;
+        }
+
+        footer {
+            padding: 30px 20px;
+            text-align: center;
+            background-color: #1e1e1e;
+            animation: fadeIn 2s ease-in;
+        }
+
+        footer p {
+            font-size: 0.9em;
+            color: #bbbbbb;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vandana Gattupelli</h1>
+        <p>AI Enthusiast | Python Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>I'm Vandana Gattupelli, an AI enthusiast with a passion for developing solutions in Python. I love creating projects that blend technology and creativity. Explore my work and feel free to reach out if you want to collaborate!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title 1</h3>
+            <p>A brief description of the first project. The technologies used include Python, HTML, and CSS.</p>
+            <p><a href="#" target="_blank" style="color: #ff6347;">View Project</a></p>
+        </div>
+        <div class="project">
+            <h3>Project Title 2</h3>
+            <p>A brief description of the second project. The technologies used include Python, HTML, and CSS.</p>
+            <p><a href="#" target="_blank" style="color: #ff6347;">View Project</a></p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>With a strong foundation in Python and a growing interest in AI, I am constantly seeking new challenges and opportunities to expand my skills. My goal is to leverage technology to create meaningful and impactful projects.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you're interested in my work or want to collaborate on a project, don't hesitate to reach out!</p>
+        <p>Email: <a href="mailto:youremail@example.com" style="color: #ff6347;">youremail@example.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2024 Vandana Gattupelli. All rights reserved.</p>
+    </footer>
+</body>
+</html>
